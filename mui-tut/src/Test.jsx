@@ -37,8 +37,8 @@ const rows = [
 
 function Test() {
     return (
-        <Box>
-            <DataGrid columns={ } />
+        <Box height={400} width={800}>
+            <DataGrid onCellEditCommit={(params) => console.log(params)} columns={columns} rows={rows} />
         </Box>
     )
 }
